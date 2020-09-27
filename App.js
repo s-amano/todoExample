@@ -1,10 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import store from './src/store/';
-import  Main from './src/components/Main';
-import { Provider } from 'react-redux';
-import {addTodo} from './src/actions'
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import store from "./src/store/";
+import Main from "./src/components/Main";
+import { Provider } from "react-redux";
+import { addTodo, toggleTodo } from "./src/actions";
 
 export default function App() {
   return (
@@ -19,8 +19,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
